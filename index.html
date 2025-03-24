@@ -9,7 +9,7 @@
     <title>Pixer</title>
 </head>
 <body>
-<!-- ------------------------header----------------- -->
+<!-- ------------------header----------------- -->
     <div class="header">
         <div class="container header__container">
             <div class="logo"><img src="./images/layer.jpg" alt="logo rasmi" class="header__img"></div>
@@ -25,7 +25,8 @@
             <div class="hum__menu">≡</div>
         </div>
     </div>
-    <!-- --------------------hero------------------- -->
+
+<!-- ------------------hero------------------- -->
     <div class="hero">
         <div class="container hero__container">
             <div class="hero__left">
@@ -34,12 +35,13 @@
                 <button class="hero__btn">Xizmatlar bilan tanishish</button>
             </div>
             <div class="hero__right">
-                <img src="./images/hero.svg" alt="video bor" class="hero__img">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/08WiUcJmnZc?si=zag_RaIlF9_0bK54" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
     </div>
-    <!-- --------------------main-------------------- -->
-     <div class="main">
+
+<!-- -----------------main-------------------- -->
+    <div class="main">
        <div class="container main__container">
             <h1 class="main__title">Xizmatlar</h1>
             <p class="main__text">Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis lacinia ex, eget sollicitudin massa pellentesque in. Vivamus mattis eros at sem pulvinar</p>
@@ -75,10 +77,10 @@
             <a class="main__link" href="#">Xizmatlar sahifasiga o'tish</a>
         </div>
         </div>
-     </div>
-     <!-- -----------------------------------------SERVICES----------------------- -->
+    </div>
 
-     <div class="services">
+<!-- ----------------services----------------- -->
+    <div class="services">
         <div class="container">
             <div class="services-section">
                 <h1 class="section-title">Biz qanday ishlaymiz</h1>
@@ -122,18 +124,29 @@
             <button class="services-button">Buyurtma berish</button>
 
         </div>
-     </div>
+    </div>
 
-     <!-- -----------------------------------------SECTION----------------------- -->
-      <div class="section">
-        <div class="container">
-            <h1 class="section-title">Buyurtma berish</h1>
-            <p class="section-text">Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis lacinia ex, eget sollicitudin massa pellentesque in. Vivamus mattis eros at sem pulvinar</p>
-            <img src="./images/form.svg" alt="" class="section-img">
-        
+<!-- ---------------section------------------- -->
+    <div class="section">
+        <div class="container section__container">
+            <h1 class="section__title">Buyurtma berish</h1>
+            <p class="section__text">Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis lacinia ex, eget sollicitudin massa pellentesque in. Vivamus mattis eros at sem pulvinar</p>
+            <div class="section__box">
+                <form class="section__form">
+                    <input type="text" name="name" placeholder="Ismingiz">
+                    <input type="tel" name="phone" placeholder="Telefon raqamingiz">
+                    <select name="service">
+                        <option disabled selected>Xizmat turi</option>
+                        <option value="service1">Xizmat 1</option>
+                        <option value="service2">Xizmat 2</option>
+                    </select>
+                    <button class="section__btn" type="submit">Buyurtma berish</button>
+                </form>               
+            </div>
         </div>
-      </div>
-      <!-- ----------------footer-------------------- -->
+    </div>
+
+<!-- ---------------footer-------------------- -->
     <div class="footer">
         <div class="container footer__container">
             <div class="footer__left">
@@ -159,5 +172,6 @@
             </div>                   
         </div>  
     </div>
+
 </body>
 </html>

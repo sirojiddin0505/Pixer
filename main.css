@@ -33,12 +33,24 @@
     line-height: 24px;
     letter-spacing: 0%;
 }
-.header__btn{
+.header__btn, .section__btn, .hero__btn, .main__btn{
     background-color: rgba(0, 186, 252, 1);
-    border: none;
-    border-radius: 4px;
+    border-radius: 8px;
     padding: 8px 16px;
-    color: white;
+    color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(0, 186, 252, 1);
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+iframe{
+    border-radius: 24px;
+}
+.header__btn:hover, .section__btn:hover, .hero__btn:hover, .main__btn:hover{
+    color: rgba(0, 186, 252, 1);
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(0, 186, 252, 1);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    transform: scale(1.01);
 }
 .hum__menu{
     display: none;
@@ -66,16 +78,6 @@
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0%;    
-}
-.hero__btn, .main__btn{
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 24px;
-    color: white;
-    background-color: rgb(87, 134, 222);
-    border: none;
-    border-radius: 5px;
-    padding: 8px 16px;
 }
 .hero__img{
     max-width: 100%;
@@ -148,30 +150,23 @@
     text-align: center;
 }
 .sectiont-title{
-    font-family: Open Sans;
     font-size: 24px;
     font-weight: 700;
     line-height: 31.2px;
     text-align: center;
-    
 }
 .section-text{
-    font-family: Open Sans;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     text-align: center;
-    /* max-width: 719px; 
-    height: 48px; */
     text-align: center;
-    
 }
 .services-step{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin-top: 50px;
-    /* text-align: center; */
 }
 .step-img{
     width: 300px;
@@ -180,14 +175,11 @@
     opacity: 0px;    
 }
 .step-title{
-    font-family: Open Sans;
     font-size: 20px;
     font-weight: 700;
     line-height: 26px;
-    /* text-align: center; */  
 }
 .step-text{
-    font-family: Open Sans;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -199,13 +191,11 @@
     margin-top: 70px;
 }
 .frame-title{
-    font-family: Open Sans;
     font-size: 20px;
     font-weight: 700;
     line-height: 26px;
 }
 .frame-text{
-    font-family: Open Sans;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -218,14 +208,12 @@
     align-items: center;
 }
 .frame2-title{
-    font-family: Open Sans;
     font-size: 20px;
     font-weight: 700;
     line-height: 26px;
     text-align: center;   
 }
 .frame2-text{
-    font-family: Open Sans;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -238,13 +226,11 @@
     margin-top: 70px;
 }
 .frame3-title{
-    font-family: Open Sans;
     font-size: 20px;
     font-weight: 700;
     line-height: 26px;
 }
 .frame3-text{
-    font-family: Open Sans;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -257,13 +243,11 @@
     margin-top: 70px;
 }
 .frame4-title{
-    font-family: Open Sans;
     font-size: 20px;
     font-weight: 700;
     line-height: 26px;
 }
 .frame4-text{
-    font-family: Open Sans;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -274,39 +258,51 @@
     height: 40px;
     margin: 70px 540px;
     background-color: rgba(0, 186, 252, 1);
-    color: white;
+    color: rgba(255, 255, 255, 1);
     border: none;
     border-radius: 7px;
 }
-/* --------------------------------SECTION------------------- */
+/* ----------section-------- */
 .section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     background-color: rgba(0, 186, 252, 1);
-    width: 1300px;
-    height: 543px;
-    margin: 10px auto;
 }
-.section-title{
-    color: white;
-    font-family: Open Sans;
+.section__title{
+    color: rgba(255, 255, 255, 1);
     font-size: 34px;
     font-weight: 700;
     line-height: 31.2px;
-    text-align: center;
-    
+    text-align: center; 
 }
-.section-text{
-    color: white;
-    font-family: Open Sans;
+.section__text{
+    color: rgba(255, 255, 255, 1);
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     text-align: center;
-    width: 719px;
-    height: 48px;   
+    max-width: 719px;
+    margin: 0 auto;
+}
+.section__form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    gap: 16px;
+}
+.section__box{
+    background-color: rgba(255, 255, 255, 1);
+    width: 348px;
+    margin: 24px auto;
+    border-radius: 5px;
+}
+.section__form input, .section__form select{
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    font-size: 16px; 
 }
 /* -------footer----- */
 .footer{
